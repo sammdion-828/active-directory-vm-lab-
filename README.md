@@ -20,15 +20,22 @@ This guide provides step-by-step instructions to deploy and configure Active Dir
 ### 1. Launch the Windows Server Instance
 1. Sign in to the **AWS Management Console**.
 2. Go to **EC2 Dashboard → Instances → Launch Instance**.
-3. Choose **Microsoft Windows Server 2019 or 2022 Base** AMI.
-4. Select an instance type (e.g., `t3.medium` or larger).
-5. Configure **network settings**:
+   
+ ![Screenshot 2025-10-26 144838](https://github.com/user-attachments/assets/b38af19e-d6af-4d56-bb83-f43195f0608e)
+
+5. Choose **Microsoft Windows Server 2022 Base or Higher** AMI.
+6.Select an instance type (e.g., `t3.medium` or larger).
+
+ ![Screenshot 2025-10-26 145039](https://github.com/user-attachments/assets/a60ee6e6-0e7b-44c2-9e79-dcbfbe6feb38)
+ ![Screenshot 2025-10-26 145428](https://github.com/user-attachments/assets/31479ed5-8a29-4adc-bf93-678446a22813)
+ 
+7. Configure **network settings**:
    - Place the instance in your target VPC and subnet.
    - Enable **Auto-assign Public IP** if accessing over the internet.
-6. Attach or create a **key pair** for RDP access.
-7. Configure the **security group** to allow:
+8. Attach or create a **key pair** for RDP access.
+12. Configure the **security group** to allow:
    - TCP 3389 (RDP) from your IP
-8. Launch the instance.
+11. Launch the instance.
 
 ---
 
