@@ -70,7 +70,7 @@ This guide provides step-by-step instructions to deploy and configure Active Dir
    
 ---
 
-### 8. Create Additional Users or Join Other Devices
+### 6. Create Additional Users or Join Other Devices
 - Create new users in **Active Directory Users and Computers**.
 - Join other Windows machines to the domain using:
 
