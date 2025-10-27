@@ -13,7 +13,7 @@ This guide provides step-by-step instructions to deploy and configure Active Dir
 - Existing or new Virtual Private Cloud (VPC)
 - Security Group allowing RDP (port 3389)
 - Key pair for RDP authentication
-- Windows Server 2019 or 2022 AMI
+- Windows Server 2025 AMI
 
 ---
 
@@ -87,7 +87,7 @@ This guide provides step-by-step instructions to deploy and configure Active Dir
 2. Select **Promote this server to a domain controller**.
 3. Choose:
 - **Add a new forest** (if creating a new domain)
-- Provide a **Root Domain Name** (e.g., `advmlab.local`)
+- Provide a **Root Domain Name** (e.g., `advmlab2.local`)
 4. Set a **Directory Services Restore Mode (DSRM)** password.
 5. Complete the wizard and restart the server.
 
@@ -107,12 +107,23 @@ This guide provides step-by-step instructions to deploy and configure Active Dir
 3. Launch **Active Directory Users and Computers (ADUC)**.
 4. Confirm your domain name and structure.
 5. Create Organizational Units (OUs) and test user accounts.
-   
----
 
 ### 6. Create Additional Users or Join Other Devices
 - Create new users in **Active Directory Users and Computers**
 ---
+![Active Directory Users and Computers step 15](https://github.com/user-attachments/assets/ee4eeabc-ecfb-46b0-b0cf-e7191f138cf7)
+
+
+![Creating OU in AD step 16](https://github.com/user-attachments/assets/38b54d98-805c-4db0-bf60-ed945e4ca72c)
+
+
+![Creating a New User in AD step 17](https://github.com/user-attachments/assets/00b9b8d0-c5fd-4549-a802-e2f699ce742c)
+
+
+![Added user to OU step 18](https://github.com/user-attachments/assets/390d772c-a2e4-4ed4-933e-0861492103cc)
+
+
+
 
 ## Cleanup (Optional)
 If testing only, terminate your EC2 instance to avoid charges.
